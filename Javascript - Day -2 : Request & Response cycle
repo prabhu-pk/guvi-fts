@@ -1,0 +1,10 @@
+Execute the below code and write your description in txt file
+typeof(1) - number
+typeof(1.1) - number 
+typeof('1.1') - string
+typeof(true) - bollean
+typeof(null) - null
+typeof(undefined) - undefined
+typeof([]) - object
+typeof({}) - object
+typeof(NaN) - NAN
