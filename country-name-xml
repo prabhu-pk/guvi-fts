@@ -1,0 +1,15 @@
+var xhr = new XMLHttpRequest();
+xhr.open("GET", "https://restcountries.eu/rest/v2/all");
+xhr.onload = function() {
+    var a = JSON.parse(this.response);
+    foo(a[104].name);
+};
+xhr.onerror = function() {
+    console.log('errer', this.statusText);
+};
+
+xhr.send();
+
+function foo(values) {
+    console.log(values);
+}
